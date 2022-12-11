@@ -93,3 +93,8 @@ header {
 .card__go-next:hover ~ .card-body .card-title {
 	color: #0d6efd;
 }
+
+.buy-now-btn button {
+	font-size: 28px;
+	padding: 8px 24px;
+}

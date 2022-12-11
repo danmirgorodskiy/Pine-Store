@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iPhone | Pine Store</title>
+	<link rel="stylesheet" href="../../assets/css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+	<header class="p-3 bg-dark text-white">
+		<div class=" container d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+			<a href="/" class="d-flex align-items-center mb-2 me-5 mb-lg-0 text-white text-decoration-none">
+				<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" viewBox="0 0 24 24"
+					fill="none" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href="#bootstrap"></use>
+					<path
+						d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+						fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M3 6H21" stroke="#212529" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path
+						d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+						stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				Pine
+			</a>
+			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						Categories
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark">
+						<li><a class="dropdown-item nav-link px-2 text-white" href="../iphone/">iPhone</a></li>
+						<li><a class="dropdown-item nav-link px-2 text-white" href="../ipad/">iPad</a></li>
+						<li><a class="dropdown-item nav-link px-2 text-white" href="../ipod/">iPod</a></li>
+						<li><a class="dropdown-item nav-link px-2 text-white" href="../mac/">Mac</a></li>
+						<li><a class="dropdown-item nav-link px-2 text-white" href="../airpods/">AirPods</a></li>
+						<li><a class="dropdown-item nav-link px-2 text-white" href="../accessories/">Accessories</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="../" class="nav-link px-2 text-white">Shop all</a></li>
+				<li><a href="../../faq/" class="nav-link px-2 text-white">FAQs</a></li>
+				<li><a href="../../about/" class="nav-link px-2 text-white">About</a></li>
+			</ul>
+			<div class="text-end">
+				<button type="button" class="btn btn-outline-light me-2">Login</button>
+				<button type="button" class="btn btn-warning">Sign-up</button>
+			</div>
+		</div>
+	</header>
+	<div class="container row mx-auto pt-4">
+		<aside class="col col-lg-2">
+			<div class="accordion" id="accordionPanelsStayOpenExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+							aria-controls="panelsStayOpen-collapseOne">
+							Price
+						</button>
+					</h2>
+					<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+						aria-labelledby="panelsStayOpen-headingOne">
+						<div class="accordion-body">
+							<label for="customRange1" class="form-label">Choose price:</label>
+							<input type="range" class="form-range" min="0" max="10000" id="customRange1">
+							<div class="d-flex justify-content-between">
+								<span>0</span>
+								<span>10 000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingFour">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+							aria-controls="panelsStayOpen-collapseFour">
+							Item Condition
+						</button>
+					</h2>
+					<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+						aria-labelledby="panelsStayOpen-headingFour">
+						<div class="accordion-body">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="newFilterCheckbox">
+								<label class="form-check-label" for="newFilterCheckbox">
+									New
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="openboxFilterCheckbox">
+								<label class="form-check-label" for="openboxFilterCheckbox">
+									Open Box
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="usedFilterCheckbox">
+								<label class="form-check-label" for="usedFilterCheckbox">
+									Used
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="demoFilterCheckbox">
+								<label class="form-check-label" for="demoFilterCheckbox">
+									Demo
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingFive">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+							aria-controls="panelsStayOpen-collapseFive">
+							Availability
+						</button>
+					</h2>
+					<div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+						aria-labelledby="panelsStayOpen-headingFive">
+						<div class="accordion-body">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="onlineFilterCheckbox">
+								<label class="form-check-label" for="onlineFilterCheckbox">
+									Online
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="instoreFilterCheckbox">
+								<label class="form-check-label" for="instoreFilterCheckbox">
+									In Store
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="scheduledorderFilterCheckbox">
+								<label class="form-check-label" for="scheduledorderFilterCheckbox">
+									Scheduled order
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<main class="col">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="../">All Categories</a></li>
+					<li class="breadcrumb-item active" aria-current="page">iPhone</li>
+				</ol>
+			</nav>
+			<div class="row row-cols-1 row-cols-md-4 g-4">
+				<div class="col">
+					<div class="card">
+						<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14pro-digitalmat-gallery-1-202209_GEO_US?wid=364&hei=333&fmt=png-alpha&.v=1660830896184"
+							class="card-img-top" alt="iPhone 14 Pro Max">
+						<div class="card-body">
+							<h6 class="card-title">iPhone 14 Pro Max</h6>
+							<p class="card-text text-secondary">New / Availible in Store</p>
+							<div class="d-flex justify-content-between align-items-end">
+								<div>
+									<small class="text-muted">Price:</small>
+									<h5 class="text-dark m-0">$1200</h5>
+								</div>
+								<div>
+									<a href="../../p/iphone/4181/" class="btn btn-outline-danger btn-sm">Buy</a>
+									<button type="button" class="btn btn-outline-secondary btn-sm">Quick view</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav aria-label="...">
+				<ul class="pagination pt-4">
+					<li class="page-item disabled"><span class="page-link">Previous</span></li>
+					<li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</ul>
+			</nav>
+		</main>
+	</div>
+	<footer class="footer container mt-auto pt-4">
+		<div class="row">
+			<div class="col-6 col-md-2 mb-3">
+				<h5>Get to know us</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item mb-2"><a href="../../about/#company" class="nav-link p-0 text-muted">Company</a>
+					</li>
+					<li class="nav-item mb-2"><a href="../../about/" class="nav-link p-0 text-muted">About</a></li>
+					<li class="nav-item mb-2"><a href="../../help/" class="nav-link p-0 text-muted">Help Center</a></li>
+					<li class="nav-item mb-2"><a href="../../about/#ourvalue" class="nav-link p-0 text-muted">Our
+							Value</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md-2 mb-3">
+				<h5>For Consumers</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item mb-2"><a href="../../faq/#payments" class="nav-link p-0 text-muted">Payments</a>
+					</li>
+					<li class="nav-item mb-2"><a href="../../faq/#shipping" class="nav-link p-0 text-muted">Shipping</a>
+					</li>
+					<li class="nav-item mb-2"><a href="../../faq/#returns" class="nav-link p-0 text-muted">Product
+							Returns</a></li>
+					<li class="nav-item mb-2"><a href="../../faq/" class="nav-link p-0 text-muted">FAQs</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md-2 mb-3">
+				<h5>Become a Shopper</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item mb-2"><a href="../../faq/#shopperopportunities"
+							class="nav-link p-0 text-muted">Shopper Opportunities</a></li>
+					<li class="nav-item mb-2"><a href="../../faq/#becomeashopper" class="nav-link p-0 text-muted">Become
+							a Shopper</a></li>
+					<li class="nav-item mb-2"><a href="../../faq/#ideas&guides" class="nav-link p-0 text-muted">Ideas &
+							Guides</a></li>
+					<li class="nav-item mb-2"><a href="../../faq/#newretailers" class="nav-link p-0 text-muted">New
+							Retailers</a></li>
+				</ul>
+			</div>
+			<div class="col-md-5 offset-md-1 mb-3">
+				<form>
+					<h5>Subscribe to our newsletter</h5>
+					<p>Monthly digest of what's new and exciting from us.</p>
+					<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+						<label for="newsletter1" class="visually-hidden">Email address</label>
+						<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+						<button class="btn btn-primary" type="button">Subscribe</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+			<p>© 2022 Pine Store, Inc. All rights reserved.</p>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -21,46 +21,54 @@
 
 <body class="d-flex flex-column h-100">
 	<header class="p-3 bg-dark text-white">
-		<div class=" container d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-			<a href="/" class="d-flex align-items-center mb-2 me-5 mb-lg-0 text-white text-decoration-none">
-				<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" viewBox="0 0 24 24"
-					fill="none" xmlns="http://www.w3.org/2000/svg">
-					<use xlink:href="#bootstrap"></use>
-					<path
-						d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
-						fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-					<path d="M3 6H21" stroke="#212529" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" />
-					<path
-						d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
-						stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-				</svg>
-				Pine
-			</a>
-			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Categories
-					</a>
-					<ul class="dropdown-menu dropdown-menu-dark">
-						<li><a class="dropdown-item nav-link px-2 text-white" href="iphone/">iPhone</a></li>
-						<li><a class="dropdown-item nav-link px-2 text-white" href="ipad/">iPad</a></li>
-						<li><a class="dropdown-item nav-link px-2 text-white" href="ipod/">iPod</a></li>
-						<li><a class="dropdown-item nav-link px-2 text-white" href="mac/">Mac</a></li>
-						<li><a class="dropdown-item nav-link px-2 text-white" href="airpods/">AirPods</a></li>
-						<li><a class="dropdown-item nav-link px-2 text-white" href="accessories/">Accessories</a></li>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="/">
+					<svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href="#bootstrap"></use>
+						<path
+							d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+							fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M3 6H21" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						<path
+							d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+							stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+					Pine
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Categories
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="iphone/">iPhone</a></li>
+								<li><a class="dropdown-item" href="ipad/">iPad</a></li>
+								<li><a class="dropdown-item" href="ipod/">iPod</a></li>
+								<li><a class="dropdown-item" href="mac/">Mac</a></li>
+								<li><a class="dropdown-item" href="airpods/">AirPods</a></li>
+								<li><a class="dropdown-item" href="accessories/">Accessories</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="../c/" class="nav-link">Shop all</a></li>
+						<li class="nav-item"><a href="../faq/" class="nav-link">FAQs</a></li>
+						<li class="nav-item"><a href="../about/" class="nav-link">About</a></li>
 					</ul>
-				</li>
-				<li><a href="../c/" class="nav-link px-2 text-white active">Shop all</a></li>
-				<li><a href="../faq/" class="nav-link px-2 text-white">FAQs</a></li>
-				<li><a href="../about/" class="nav-link px-2 text-white">About</a></li>
-			</ul>
-			<div class="text-end">
-				<button type="button" class="btn btn-outline-light me-2">Login</button>
-				<button type="button" class="btn btn-warning">Sign-up</button>
+					<div class="d-flex text-end">
+						<a href="../auth.html?tab=login">
+							<button class="btn btn-outline-light me-2">Login</button>
+						</a>
+						<a href="../auth.html?tab=signup">
+							<button class="btn btn-warning">Sign-up</button>
+						</a>
+					</div>
+				</div>
 			</div>
-		</div>
+		</nav>
 	</header>
 	<div class="container row mx-auto pt-4">
 		<aside class="col col-lg-2">

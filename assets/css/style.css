@@ -124,3 +124,29 @@ header {
 .nav-link:focus, .nav-link:hover {
     color: #495057!important;
 }
+
+.cart-module {
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+    color: black;
+}
+
+.cart-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    color: black;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart-summary h5 {
+    color: black;
+}
+
+.quantity-input {
+    text-align: center;
+}
